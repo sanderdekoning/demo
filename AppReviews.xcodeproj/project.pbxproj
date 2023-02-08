@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C55BE8FA2993EFDD005F10AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE8F92993EFDD005F10AA /* AppDelegate.swift */; };
+		C55BE8FC2993EFDD005F10AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE8FB2993EFDD005F10AA /* SceneDelegate.swift */; };
+		C55BE9032993EFDE005F10AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55BE9022993EFDE005F10AA /* Assets.xcassets */; };
+		C55BE9212993F019005F10AA /* ReviewsHTTPFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91A2993F019005F10AA /* ReviewsHTTPFetcherTests.swift */; };
+		C55BE9222993F019005F10AA /* ReviewsMostWordOccurancesInsightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91B2993F019005F10AA /* ReviewsMostWordOccurancesInsightsTests.swift */; };
+		C55BE9232993F019005F10AA /* ReviewsResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91C2993F019005F10AA /* ReviewsResponseMock.swift */; };
+		C55BE9242993F019005F10AA /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91D2993F019005F10AA /* URLProtocolMock.swift */; };
+		C55BE9252993F019005F10AA /* AppleAppStoreReviewsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C55BE91E2993F019005F10AA /* AppleAppStoreReviewsResponse.json */; };
+		C55BE9262993F019005F10AA /* ReviewsJSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91F2993F019005F10AA /* ReviewsJSONParserTests.swift */; };
+		C55BE9272993F019005F10AA /* URLSession+Mocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9202993F019005F10AA /* URLSession+Mocked.swift */; };
+		C55BE94B2993F042005F10AA /* ReviewsURLFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */; };
+		C55BE94C2993F042005F10AA /* ReviewsHTTPFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */; };
+		C55BE94D2993F042005F10AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92B2993F042005F10AA /* FeedViewController.swift */; };
+		C55BE94E2993F042005F10AA /* AppleAppStoreReviews+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92D2993F042005F10AA /* AppleAppStoreReviews+Entry.swift */; };
+		C55BE94F2993F042005F10AA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92E2993F042005F10AA /* Review.swift */; };
+		C55BE9502993F042005F10AA /* ReviewsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92F2993F042005F10AA /* ReviewsFilter.swift */; };
+		C55BE9512993F042005F10AA /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9302993F042005F10AA /* Reviews.swift */; };
+		C55BE9522993F042005F10AA /* AppleAppStoreReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9312993F042005F10AA /* AppleAppStoreReviews.swift */; };
+		C55BE9532993F042005F10AA /* ReviewsMostWordOccurancesInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9322993F042005F10AA /* ReviewsMostWordOccurancesInsights.swift */; };
+		C55BE9542993F042005F10AA /* ReviewsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9332993F042005F10AA /* ReviewsOutput.swift */; };
+		C55BE9552993F042005F10AA /* ReviewsActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9342993F042005F10AA /* ReviewsActor.swift */; };
+		C55BE9562993F042005F10AA /* ReviewsInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9352993F042005F10AA /* ReviewsInsights.swift */; };
+		C55BE9572993F042005F10AA /* ReviewsRatingFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9362993F042005F10AA /* ReviewsRatingFilter.swift */; };
+		C55BE9582993F042005F10AA /* ReviewsOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9372993F042005F10AA /* ReviewsOutputProtocol.swift */; };
+		C55BE9592993F042005F10AA /* FeedViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9382993F042005F10AA /* FeedViewController+TableView.swift */; };
+		C55BE95A2993F042005F10AA /* ReviewsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */; };
+		C55BE95B2993F042005F10AA /* ReviewsParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */; };
+		C55BE95C2993F042005F10AA /* FeedViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93C2993F042005F10AA /* FeedViewController+Filter.swift */; };
+		C55BE95D2993F042005F10AA /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93D2993F042005F10AA /* ReviewCell.swift */; };
+		C55BE95F2993F042005F10AA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93F2993F042005F10AA /* DetailsViewController.swift */; };
+		C55BE9602993F042005F10AA /* FeedViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9402993F042005F10AA /* FeedViewModelProtocol.swift */; };
+		C55BE9612993F042005F10AA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9412993F042005F10AA /* FeedViewModel.swift */; };
+		C55BE9622993F042005F10AA /* ReviewMapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9432993F042005F10AA /* ReviewMapProtocol.swift */; };
+		C55BE9632993F042005F10AA /* AppleAppStoreReviews+Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */; };
+		C55BE9642993F042005F10AA /* ReviewsMapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */; };
+		C55BE9652993F042005F10AA /* WordFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9462993F042005F10AA /* WordFrequencyView.swift */; };
+		C55BE9662993F042005F10AA /* ReviewsURLSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */; };
+		C55BE9672993F042005F10AA /* ReviewsHTTPSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */; };
+		C55BE96A2993F063005F10AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BE9692993F063005F10AA /* LaunchScreen.storyboard */; };
+		C55BE9742993F346005F10AA /* NoReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9732993F346005F10AA /* NoReviewsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C55BE9152993F005005F10AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C55BE8EE2993EFDD005F10AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C55BE8F52993EFDD005F10AA;
+			remoteInfo = AppReviews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C55BE8F62993EFDD005F10AA /* AppReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55BE8F92993EFDD005F10AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C55BE8FB2993EFDD005F10AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C55BE9022993EFDE005F10AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C55BE9072993EFDE005F10AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55BE9112993F005005F10AA /* AppReviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppReviewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55BE91A2993F019005F10AA /* ReviewsHTTPFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsHTTPFetcherTests.swift; sourceTree = "<group>"; };
+		C55BE91B2993F019005F10AA /* ReviewsMostWordOccurancesInsightsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsMostWordOccurancesInsightsTests.swift; sourceTree = "<group>"; };
+		C55BE91C2993F019005F10AA /* ReviewsResponseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsResponseMock.swift; sourceTree = "<group>"; };
+		C55BE91D2993F019005F10AA /* URLProtocolMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		C55BE91E2993F019005F10AA /* AppleAppStoreReviewsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppleAppStoreReviewsResponse.json; sourceTree = "<group>"; };
+		C55BE91F2993F019005F10AA /* ReviewsJSONParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsJSONParserTests.swift; sourceTree = "<group>"; };
+		C55BE9202993F019005F10AA /* URLSession+Mocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Mocked.swift"; sourceTree = "<group>"; };
+		C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsURLFetcherProtocol.swift; sourceTree = "<group>"; };
+		C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsHTTPFetcher.swift; sourceTree = "<group>"; };
+		C55BE92B2993F042005F10AA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C55BE92D2993F042005F10AA /* AppleAppStoreReviews+Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppleAppStoreReviews+Entry.swift"; sourceTree = "<group>"; };
+		C55BE92E2993F042005F10AA /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		C55BE92F2993F042005F10AA /* ReviewsFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsFilter.swift; sourceTree = "<group>"; };
+		C55BE9302993F042005F10AA /* Reviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		C55BE9312993F042005F10AA /* AppleAppStoreReviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAppStoreReviews.swift; sourceTree = "<group>"; };
+		C55BE9322993F042005F10AA /* ReviewsMostWordOccurancesInsights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsMostWordOccurancesInsights.swift; sourceTree = "<group>"; };
+		C55BE9332993F042005F10AA /* ReviewsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsOutput.swift; sourceTree = "<group>"; };
+		C55BE9342993F042005F10AA /* ReviewsActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsActor.swift; sourceTree = "<group>"; };
+		C55BE9352993F042005F10AA /* ReviewsInsights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsInsights.swift; sourceTree = "<group>"; };
+		C55BE9362993F042005F10AA /* ReviewsRatingFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsRatingFilter.swift; sourceTree = "<group>"; };
+		C55BE9372993F042005F10AA /* ReviewsOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsOutputProtocol.swift; sourceTree = "<group>"; };
+		C55BE9382993F042005F10AA /* FeedViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+TableView.swift"; sourceTree = "<group>"; };
+		C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsJSONParser.swift; sourceTree = "<group>"; };
+		C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsParserProtocol.swift; sourceTree = "<group>"; };
+		C55BE93C2993F042005F10AA /* FeedViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+Filter.swift"; sourceTree = "<group>"; };
+		C55BE93D2993F042005F10AA /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		C55BE93F2993F042005F10AA /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C55BE9402993F042005F10AA /* FeedViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModelProtocol.swift; sourceTree = "<group>"; };
+		C55BE9412993F042005F10AA /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		C55BE9432993F042005F10AA /* ReviewMapProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewMapProtocol.swift; sourceTree = "<group>"; };
+		C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppleAppStoreReviews+Reviews.swift"; sourceTree = "<group>"; };
+		C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsMapProtocol.swift; sourceTree = "<group>"; };
+		C55BE9462993F042005F10AA /* WordFrequencyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordFrequencyView.swift; sourceTree = "<group>"; };
+		C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsURLSourceProtocol.swift; sourceTree = "<group>"; };
+		C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsHTTPSource.swift; sourceTree = "<group>"; };
+		C55BE9692993F063005F10AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C55BE9732993F346005F10AA /* NoReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoReviewsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C55BE8F32993EFDD005F10AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55BE90E2993F005005F10AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C55BE8ED2993EFDD005F10AA = {
+			isa = PBXGroup;
+			children = (
+				C55BE8F82993EFDD005F10AA /* AppReviews */,
+				C55BE9122993F005005F10AA /* AppReviewsTests */,
+				C55BE8F72993EFDD005F10AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C55BE8F72993EFDD005F10AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE8F62993EFDD005F10AA /* AppReviews.app */,
+				C55BE9112993F005005F10AA /* AppReviewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C55BE8F82993EFDD005F10AA /* AppReviews */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9022993EFDE005F10AA /* Assets.xcassets */,
+				C55BE9692993F063005F10AA /* LaunchScreen.storyboard */,
+				C55BE9072993EFDE005F10AA /* Info.plist */,
+				C55BE8F92993EFDD005F10AA /* AppDelegate.swift */,
+				C55BE8FB2993EFDD005F10AA /* SceneDelegate.swift */,
+				C55BE96B2993F221005F10AA /* ViewControllers */,
+				C55BE96C2993F22F005F10AA /* ViewModels */,
+				C55BE96D2993F244005F10AA /* Views */,
+				C55BE9702993F273005F10AA /* Models */,
+				C55BE92C2993F042005F10AA /* Reviews */,
+				C55BE96E2993F25E005F10AA /* Insights */,
+				C55BE9282993F042005F10AA /* Fetch */,
+				C55BE9422993F042005F10AA /* Map */,
+				C55BE9392993F042005F10AA /* Parse */,
+				C55BE9472993F042005F10AA /* Source */,
+			);
+			path = AppReviews;
+			sourceTree = "<group>";
+		};
+		C55BE9122993F005005F10AA /* AppReviewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE91E2993F019005F10AA /* AppleAppStoreReviewsResponse.json */,
+				C55BE91A2993F019005F10AA /* ReviewsHTTPFetcherTests.swift */,
+				C55BE91F2993F019005F10AA /* ReviewsJSONParserTests.swift */,
+				C55BE91B2993F019005F10AA /* ReviewsMostWordOccurancesInsightsTests.swift */,
+				C55BE91C2993F019005F10AA /* ReviewsResponseMock.swift */,
+				C55BE91D2993F019005F10AA /* URLProtocolMock.swift */,
+				C55BE9202993F019005F10AA /* URLSession+Mocked.swift */,
+			);
+			path = AppReviewsTests;
+			sourceTree = "<group>";
+		};
+		C55BE9282993F042005F10AA /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */,
+				C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */,
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
+		C55BE92C2993F042005F10AA /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9342993F042005F10AA /* ReviewsActor.swift */,
+				C55BE9302993F042005F10AA /* Reviews.swift */,
+				C55BE92F2993F042005F10AA /* ReviewsFilter.swift */,
+				C55BE9362993F042005F10AA /* ReviewsRatingFilter.swift */,
+				C55BE9332993F042005F10AA /* ReviewsOutput.swift */,
+				C55BE9372993F042005F10AA /* ReviewsOutputProtocol.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		C55BE9392993F042005F10AA /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */,
+				C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		C55BE9422993F042005F10AA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9432993F042005F10AA /* ReviewMapProtocol.swift */,
+				C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */,
+				C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C55BE9472993F042005F10AA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */,
+				C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C55BE96B2993F221005F10AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE92B2993F042005F10AA /* FeedViewController.swift */,
+				C55BE93C2993F042005F10AA /* FeedViewController+Filter.swift */,
+				C55BE9382993F042005F10AA /* FeedViewController+TableView.swift */,
+				C55BE93F2993F042005F10AA /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C55BE96C2993F22F005F10AA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9412993F042005F10AA /* FeedViewModel.swift */,
+				C55BE9402993F042005F10AA /* FeedViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C55BE96D2993F244005F10AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE93D2993F042005F10AA /* ReviewCell.swift */,
+				C55BE9462993F042005F10AA /* WordFrequencyView.swift */,
+				C55BE9732993F346005F10AA /* NoReviewsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C55BE96E2993F25E005F10AA /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9322993F042005F10AA /* ReviewsMostWordOccurancesInsights.swift */,
+				C55BE9352993F042005F10AA /* ReviewsInsights.swift */,
+			);
+			path = Insights;
+			sourceTree = "<group>";
+		};
+		C55BE9702993F273005F10AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE92E2993F042005F10AA /* Review.swift */,
+				C55BE9312993F042005F10AA /* AppleAppStoreReviews.swift */,
+				C55BE92D2993F042005F10AA /* AppleAppStoreReviews+Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C55BE8F52993EFDD005F10AA /* AppReviews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55BE90A2993EFDE005F10AA /* Build configuration list for PBXNativeTarget "AppReviews" */;
+			buildPhases = (
+				C55BE8F22993EFDD005F10AA /* Sources */,
+				C55BE8F32993EFDD005F10AA /* Frameworks */,
+				C55BE8F42993EFDD005F10AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppReviews;
+			productName = AppReviews;
+			productReference = C55BE8F62993EFDD005F10AA /* AppReviews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C55BE9102993F005005F10AA /* AppReviewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55BE9172993F005005F10AA /* Build configuration list for PBXNativeTarget "AppReviewsTests" */;
+			buildPhases = (
+				C55BE90D2993F005005F10AA /* Sources */,
+				C55BE90E2993F005005F10AA /* Frameworks */,
+				C55BE90F2993F005005F10AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55BE9162993F005005F10AA /* PBXTargetDependency */,
+			);
+			name = AppReviewsTests;
+			productName = AppReviewsTests;
+			productReference = C55BE9112993F005005F10AA /* AppReviewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C55BE8EE2993EFDD005F10AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "Into Ventures";
+				TargetAttributes = {
+					C55BE8F52993EFDD005F10AA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C55BE9102993F005005F10AA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C55BE8F52993EFDD005F10AA;
+					};
+				};
+			};
+			buildConfigurationList = C55BE8F12993EFDD005F10AA /* Build configuration list for PBXProject "AppReviews" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C55BE8ED2993EFDD005F10AA;
+			productRefGroup = C55BE8F72993EFDD005F10AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C55BE8F52993EFDD005F10AA /* AppReviews */,
+				C55BE9102993F005005F10AA /* AppReviewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C55BE8F42993EFDD005F10AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55BE96A2993F063005F10AA /* LaunchScreen.storyboard in Resources */,
+				C55BE9032993EFDE005F10AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55BE90F2993F005005F10AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55BE9252993F019005F10AA /* AppleAppStoreReviewsResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C55BE8F22993EFDD005F10AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55BE94E2993F042005F10AA /* AppleAppStoreReviews+Entry.swift in Sources */,
+				C55BE9552993F042005F10AA /* ReviewsActor.swift in Sources */,
+				C55BE95B2993F042005F10AA /* ReviewsParserProtocol.swift in Sources */,
+				C55BE95C2993F042005F10AA /* FeedViewController+Filter.swift in Sources */,
+				C55BE9512993F042005F10AA /* Reviews.swift in Sources */,
+				C55BE94F2993F042005F10AA /* Review.swift in Sources */,
+				C55BE9572993F042005F10AA /* ReviewsRatingFilter.swift in Sources */,
+				C55BE95A2993F042005F10AA /* ReviewsJSONParser.swift in Sources */,
+				C55BE9742993F346005F10AA /* NoReviewsView.swift in Sources */,
+				C55BE9672993F042005F10AA /* ReviewsHTTPSource.swift in Sources */,
+				C55BE9522993F042005F10AA /* AppleAppStoreReviews.swift in Sources */,
+				C55BE9502993F042005F10AA /* ReviewsFilter.swift in Sources */,
+				C55BE9652993F042005F10AA /* WordFrequencyView.swift in Sources */,
+				C55BE9662993F042005F10AA /* ReviewsURLSourceProtocol.swift in Sources */,
+				C55BE95F2993F042005F10AA /* DetailsViewController.swift in Sources */,
+				C55BE9612993F042005F10AA /* FeedViewModel.swift in Sources */,
+				C55BE9602993F042005F10AA /* FeedViewModelProtocol.swift in Sources */,
+				C55BE94B2993F042005F10AA /* ReviewsURLFetcherProtocol.swift in Sources */,
+				C55BE8FA2993EFDD005F10AA /* AppDelegate.swift in Sources */,
+				C55BE94C2993F042005F10AA /* ReviewsHTTPFetcher.swift in Sources */,
+				C55BE9642993F042005F10AA /* ReviewsMapProtocol.swift in Sources */,
+				C55BE9562993F042005F10AA /* ReviewsInsights.swift in Sources */,
+				C55BE9582993F042005F10AA /* ReviewsOutputProtocol.swift in Sources */,
+				C55BE9532993F042005F10AA /* ReviewsMostWordOccurancesInsights.swift in Sources */,
+				C55BE94D2993F042005F10AA /* FeedViewController.swift in Sources */,
+				C55BE9542993F042005F10AA /* ReviewsOutput.swift in Sources */,
+				C55BE9592993F042005F10AA /* FeedViewController+TableView.swift in Sources */,
+				C55BE8FC2993EFDD005F10AA /* SceneDelegate.swift in Sources */,
+				C55BE95D2993F042005F10AA /* ReviewCell.swift in Sources */,
+				C55BE9632993F042005F10AA /* AppleAppStoreReviews+Reviews.swift in Sources */,
+				C55BE9622993F042005F10AA /* ReviewMapProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55BE90D2993F005005F10AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55BE9242993F019005F10AA /* URLProtocolMock.swift in Sources */,
+				C55BE9262993F019005F10AA /* ReviewsJSONParserTests.swift in Sources */,
+				C55BE9212993F019005F10AA /* ReviewsHTTPFetcherTests.swift in Sources */,
+				C55BE9232993F019005F10AA /* ReviewsResponseMock.swift in Sources */,
+				C55BE9222993F019005F10AA /* ReviewsMostWordOccurancesInsightsTests.swift in Sources */,
+				C55BE9272993F019005F10AA /* URLSession+Mocked.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C55BE9162993F005005F10AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C55BE8F52993EFDD005F10AA /* AppReviews */;
+			targetProxy = C55BE9152993F005005F10AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C55BE9082993EFDE005F10AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C55BE9092993EFDE005F10AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C55BE90B2993EFDE005F10AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q28T8C65CP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppReviews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.into.AppReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C55BE90C2993EFDE005F10AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q28T8C65CP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppReviews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.into.AppReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C55BE9182993F005005F10AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q28T8C65CP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.into.AppReviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppReviews";
+			};
+			name = Debug;
+		};
+		C55BE9192993F005005F10AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q28T8C65CP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.into.AppReviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppReviews";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C55BE8F12993EFDD005F10AA /* Build configuration list for PBXProject "AppReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55BE9082993EFDE005F10AA /* Debug */,
+				C55BE9092993EFDE005F10AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55BE90A2993EFDE005F10AA /* Build configuration list for PBXNativeTarget "AppReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55BE90B2993EFDE005F10AA /* Debug */,
+				C55BE90C2993EFDE005F10AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55BE9172993F005005F10AA /* Build configuration list for PBXNativeTarget "AppReviewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55BE9182993F005005F10AA /* Debug */,
+				C55BE9192993F005005F10AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C55BE8EE2993EFDD005F10AA /* Project object */;
+}
