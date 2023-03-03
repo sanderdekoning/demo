@@ -15,4 +15,6 @@ protocol FeedViewModelProtocol {
     func apply(filter: ReviewsFilter?)
     
     var mostWordOccurances: [String] { get }
+    
+    var showDetails: (@MainActor (Review) -> Void)? { get }
 }

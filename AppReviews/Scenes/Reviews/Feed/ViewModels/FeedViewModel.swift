@@ -10,15 +10,18 @@ import Foundation
 
 class FeedViewModel: FeedViewModelProtocol {
     let fetcher: ReviewsURLFetcherProtocol
-
+    var showDetails: (@MainActor (Review) -> Void)?
+    
     private(set) var reviews: ReviewsOutputProtocol
 
     init(
         fetcher: ReviewsURLFetcherProtocol = ReviewsHTTPFetcher(session: .shared),
-        reviews: ReviewsOutputProtocol = ReviewsOutput(source: Reviews())
+        reviews: ReviewsOutputProtocol = ReviewsOutput(source: Reviews()),
+        showDetails: (@MainActor (Review) -> Void)? = nil
     ) {
         self.fetcher = fetcher
         self.reviews = reviews
+        self.showDetails = showDetails
     }
     
     func updateReviews() async throws {
