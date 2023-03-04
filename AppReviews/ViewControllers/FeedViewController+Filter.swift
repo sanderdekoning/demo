@@ -52,9 +52,7 @@ private extension FeedViewController {
     }
     
     var filterMenuRatingElements: [UIMenuElement] {
-        var actions: [UIMenuElement] = []
-        
-        for i in stride(from: 5, to: 0, by: -1) {
+        stride(from: 5, to: 0, by: -1).map { i in
             let title = String(repeating: Review.starRepresentation, count: i)
             let action = UIAction(title: title) { [unowned self] _ in
                 viewModel.apply(filter: ReviewsRatingFilter(rating: i))
@@ -66,9 +64,7 @@ private extension FeedViewController {
                 action.state = i == filter.rating ? .on : .off
             }
             
-            actions.append(action)
+            return action
         }
-        
-        return actions
     }
 }
