@@ -10,7 +10,11 @@ import UIKit
 
 class ReviewsSceneCoordinator: SceneCoordinator {    
     func start(presentation: ScenePresentation) throws {
+        let navigationController = UINavigationController()
+        
+        display(viewController: navigationController, presentation: presentation)
+        
         let coordinator = FeedSceneCoordinator()
-        try coordinator.start(presentation: presentation)
+        try coordinator.start(presentation: .root(navigationController: navigationController, animated: false))
     }
 }

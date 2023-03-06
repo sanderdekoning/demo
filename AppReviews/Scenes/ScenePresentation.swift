@@ -13,6 +13,7 @@ enum ScenePresentation {
     case root(navigationController: UINavigationController, animated: Bool)
     case push(navigationController: UINavigationController, animated: Bool)
     case present(presenter: UIViewController, animated: Bool)
+    case append(tabBarController: UITabBarController, animated: Bool)
     
     func continued(animated: Bool) -> Self {
         switch self {
@@ -22,6 +23,8 @@ enum ScenePresentation {
             return .present(presenter: presenter, animated: animated)
         case .window(let window):
             return .window(window: window)
+        case .append(let tabBarController, _):
+            return .present(presenter: tabBarController, animated: animated)
         }
     }
 }

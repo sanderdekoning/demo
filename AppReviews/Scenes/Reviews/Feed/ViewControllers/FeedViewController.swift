@@ -61,6 +61,12 @@ fileprivate extension FeedViewController {
         tableView.rowHeight = 160
         
         navigationItem.setRightBarButton(filterBarButtonItem, animated: false)
+        
+        tabBarItem = UITabBarItem(
+            title: LocalizedStrings.reviewsTabBarTitle,
+            image: Images.reviewsTabBarItem,
+            tag: 0
+        )
     }
 }
 

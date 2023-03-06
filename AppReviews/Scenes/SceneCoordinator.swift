@@ -26,6 +26,10 @@ typealias SceneCoordinator = SceneCoordinatorBase & SceneCoordinatorProtocol
         case .window(let window):
             window.rootViewController = viewController
             window.makeKeyAndVisible()
+        case .append(let tabBarController, let animated):
+            var viewControllers = tabBarController.viewControllers ?? []
+            viewControllers.append(viewController)
+            tabBarController.setViewControllers(viewControllers, animated: animated)
         }
     }
 }

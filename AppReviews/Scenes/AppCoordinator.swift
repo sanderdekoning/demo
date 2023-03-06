@@ -10,10 +10,10 @@ import UIKit
 
 class AppCoordinator: SceneCoordinator {
     func start(presentation: ScenePresentation) throws {
-        let navigationController = UINavigationController()
-        display(viewController: navigationController, presentation: presentation)
-
+        let tabBarController = UITabBarController()
+        display(viewController: tabBarController, presentation: presentation)
+        
         let coordinator = ReviewsSceneCoordinator()
-        try coordinator.start(presentation: .root(navigationController: navigationController, animated: false))
+        try coordinator.start(presentation: .append(tabBarController: tabBarController, animated: false))
     }
 }
