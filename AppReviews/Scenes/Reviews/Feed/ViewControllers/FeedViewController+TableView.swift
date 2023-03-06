@@ -39,8 +39,8 @@ extension FeedViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = DetailsViewController(review: viewModel.reviews.output[indexPath.item])
-        navigationController?.pushViewController(vc, animated: true)
+        let review = viewModel.reviews.output[indexPath.item]
+        viewModel.showDetails?(review)
     }
 }
 

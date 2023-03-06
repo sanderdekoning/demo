@@ -10,7 +10,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-
+    
     func scene(
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
@@ -20,11 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
-        window = .init(windowScene: scene)
-        window?.rootViewController = UINavigationController(
-            rootViewController: FeedViewController(viewModel: FeedViewModel())
-        )
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: scene)
+        self.window = window
+
+        let coordinator = AppCoordinator()
+        try? coordinator.start(presentation: .window(window: window))
     }
 }
 
