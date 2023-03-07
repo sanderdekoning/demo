@@ -14,7 +14,7 @@ class ReviewsHTTPFetcher: ReviewsURLFetcherProtocol {
     init(session: URLSession) {
         self.session = session
     }
-    
+
     func reviews<RS: ReviewsURLSourceProtocol>(from source: RS) async throws -> RS.responseModel {
         let (data, _) = try await session.data(from: source.url)
         return try source.parser.parse(data: data, to: RS.responseModel.self)

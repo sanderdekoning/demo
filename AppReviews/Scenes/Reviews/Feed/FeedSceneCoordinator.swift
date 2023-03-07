@@ -9,8 +9,14 @@
 import UIKit
 
 class FeedSceneCoordinator: SceneCoordinator {
+    let input: ReviewsInputProtocol
+    
+    init(input: some ReviewsInputProtocol) {
+        self.input = input
+    }
+    
     func start(presentation: ScenePresentation) throws {
-        let viewModel = FeedViewModel()
+        let viewModel = FeedViewModel(input: input)
         let feed = FeedViewController(viewModel: viewModel)
 
         viewModel.showDetails = { review in

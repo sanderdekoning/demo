@@ -9,23 +9,23 @@
 import Foundation
 
 class FeedViewModel: FeedViewModelProtocol {
-    let fetcher: ReviewsURLFetcherProtocol
+    private var input: ReviewsInputProtocol
     var showDetails: (@MainActor (Review) -> Void)?
     
     private(set) var reviews: ReviewsOutputProtocol
-
+    
     init(
-        fetcher: ReviewsURLFetcherProtocol = ReviewsHTTPFetcher(session: .shared),
-        reviews: ReviewsOutputProtocol = ReviewsOutput(source: Reviews()),
+        input: some ReviewsInputProtocol,
+        reviews: some ReviewsOutputProtocol = ReviewsOutput(source: Reviews()),
         showDetails: (@MainActor (Review) -> Void)? = nil
     ) {
-        self.fetcher = fetcher
+        self.input = input
         self.reviews = reviews
         self.showDetails = showDetails
     }
     
     func updateReviews() async throws {
-        try await reviews.source.set(reviews: remoteReviews)
+        try await reviews.source.set(reviews: input.reviews)
     }
     
     func apply(filter: ReviewsFilter?) {
@@ -39,13 +39,5 @@ class FeedViewModel: FeedViewModelProtocol {
             minimumWordLength: 4,
             limit: 3
         ))
-    }
-}
-
-private extension FeedViewModel {
-    var remoteReviews: [Review] {
-        get async throws {
-            try await fetcher.reviews(from: AppleAppStoreReviewsHTTPSource()).reviews
-        }
     }
 }

@@ -10,8 +10,12 @@ import Foundation
 
 struct AppleAppStoreReviewsHTTPSource: ReviewsURLSourceProtocol {
     typealias responseModel = AppleAppStoreReviews
+
+    private var urlString: String
     
-    private var urlString = "https://itunes.apple.com/nl/rss/customerreviews/id=474495017/sortby=mostrecent/json"
+    init(appID: String) {
+        urlString = "https://itunes.apple.com/rss/customerreviews/id=\(appID)/sortby=mostrecent/json"
+    }
     
     var url: URL {
         get throws {
