@@ -11,7 +11,7 @@ import Foundation
 extension AppleAppStoreReviews.Feed.Entry: ReviewMapProtocol {
     var review: Review {
         .init(
-            author: author.label,
+            author: author.name.label,
             version: imVersion.label,
             rating: Int(imRating.label) ?? 0,
             title: title.label,
