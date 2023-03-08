@@ -1,5 +1,5 @@
 //
-//  ReviewsURLSourceProtocol.swift
+//  SourceURLProtocol.swift
 //  AppReviews
 //
 //  Created by Sander de Koning on 03/02/2023.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-protocol ReviewsURLSourceProtocol {
+protocol SourceURLProtocol {
     associatedtype responseModel: Decodable
     
     var url: URL { get throws }
     
-    var parser: ReviewsParserProtocol { get }
+    var parser: ParserProtocol { get }
 }

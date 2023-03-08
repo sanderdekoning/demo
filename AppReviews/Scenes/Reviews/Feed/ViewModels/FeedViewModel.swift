@@ -10,14 +10,14 @@ import Foundation
 
 class FeedViewModel: FeedViewModelProtocol {
     private var input: ReviewsInputProtocol
-    var showDetails: (@MainActor (Review) -> Void)?
+    var showDetails: (@MainActor (Review) throws -> Void)?
     
     private(set) var reviews: ReviewsOutputProtocol
     
     init(
         input: some ReviewsInputProtocol,
         reviews: some ReviewsOutputProtocol = ReviewsOutput(source: Reviews()),
-        showDetails: (@MainActor (Review) -> Void)? = nil
+        showDetails: (@MainActor (Review) throws -> Void)? = nil
     ) {
         self.input = input
         self.reviews = reviews

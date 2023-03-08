@@ -14,7 +14,7 @@ class AppCoordinator: SceneCoordinator {
         display(viewController: tabBarController, presentation: presentation)
         
         let coordinator = ReviewsSceneCoordinator(
-            input: ReviewsInputURL(source: AppleAppStoreReviewsHTTPSource(appID: "1108187098"))
+            input: ReviewsInputFetchURL(source: ReviewsSourceHTTPAppleAppStore(appID: "1108187098"))
         )
         try coordinator.start(presentation: .append(tabBarController: tabBarController, animated: false))
     }

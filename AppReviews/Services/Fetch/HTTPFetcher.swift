@@ -1,5 +1,5 @@
 //
-//  ReviewsHTTPFetcher.swift
+//  HTTPFetcher.swift
 //  AppReviews
 //
 //  Created by Sander de Koning on 02/02/2023.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-class ReviewsHTTPFetcher: ReviewsURLFetcherProtocol {
+class HTTPFetcher: URLFetcherProtocol {
     private let session: URLSession
 
     init(session: URLSession) {
         self.session = session
     }
 
-    func reviews<RS: ReviewsURLSourceProtocol>(from source: RS) async throws -> RS.responseModel {
+    func fetch<RS: SourceURLProtocol>(from source: RS) async throws -> RS.responseModel {
         let (data, _) = try await session.data(from: source.url)
         return try source.parser.parse(data: data, to: RS.responseModel.self)
     }

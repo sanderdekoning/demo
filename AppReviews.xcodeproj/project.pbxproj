@@ -17,8 +17,8 @@
 		C55BE9252993F019005F10AA /* AppleAppStoreReviewsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C55BE91E2993F019005F10AA /* AppleAppStoreReviewsResponse.json */; };
 		C55BE9262993F019005F10AA /* ReviewsJSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE91F2993F019005F10AA /* ReviewsJSONParserTests.swift */; };
 		C55BE9272993F019005F10AA /* URLSession+Mocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9202993F019005F10AA /* URLSession+Mocked.swift */; };
-		C55BE94B2993F042005F10AA /* ReviewsURLFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */; };
-		C55BE94C2993F042005F10AA /* ReviewsHTTPFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */; };
+		C55BE94B2993F042005F10AA /* URLFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9292993F042005F10AA /* URLFetcherProtocol.swift */; };
+		C55BE94C2993F042005F10AA /* HTTPFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92A2993F042005F10AA /* HTTPFetcher.swift */; };
 		C55BE94D2993F042005F10AA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92B2993F042005F10AA /* FeedViewController.swift */; };
 		C55BE94E2993F042005F10AA /* AppleAppStoreReviews+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92D2993F042005F10AA /* AppleAppStoreReviews+Entry.swift */; };
 		C55BE94F2993F042005F10AA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE92E2993F042005F10AA /* Review.swift */; };
@@ -33,7 +33,7 @@
 		C55BE9582993F042005F10AA /* ReviewsOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9372993F042005F10AA /* ReviewsOutputProtocol.swift */; };
 		C55BE9592993F042005F10AA /* FeedViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9382993F042005F10AA /* FeedViewController+TableView.swift */; };
 		C55BE95A2993F042005F10AA /* ReviewsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */; };
-		C55BE95B2993F042005F10AA /* ReviewsParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */; };
+		C55BE95B2993F042005F10AA /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93B2993F042005F10AA /* ParserProtocol.swift */; };
 		C55BE95C2993F042005F10AA /* FeedViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93C2993F042005F10AA /* FeedViewController+Filter.swift */; };
 		C55BE95D2993F042005F10AA /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93D2993F042005F10AA /* ReviewCell.swift */; };
 		C55BE95F2993F042005F10AA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE93F2993F042005F10AA /* DetailsViewController.swift */; };
@@ -43,14 +43,14 @@
 		C55BE9632993F042005F10AA /* AppleAppStoreReviews+Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */; };
 		C55BE9642993F042005F10AA /* ReviewsMapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */; };
 		C55BE9652993F042005F10AA /* WordFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9462993F042005F10AA /* WordFrequencyView.swift */; };
-		C55BE9662993F042005F10AA /* ReviewsURLSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */; };
-		C55BE9672993F042005F10AA /* ReviewsHTTPSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */; };
+		C55BE9662993F042005F10AA /* SourceURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9482993F042005F10AA /* SourceURLProtocol.swift */; };
+		C55BE9672993F042005F10AA /* ReviewsSourceHTTPAppleAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9492993F042005F10AA /* ReviewsSourceHTTPAppleAppStore.swift */; };
 		C55BE96A2993F063005F10AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BE9692993F063005F10AA /* LaunchScreen.storyboard */; };
 		C55BE9742993F346005F10AA /* NoReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BE9732993F346005F10AA /* NoReviewsView.swift */; };
 		C595FA7C29B7A7660060DEE0 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595FA7B29B7A7660060DEE0 /* LocalizedStrings.swift */; };
 		C595FA7E29B7A7740060DEE0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595FA7D29B7A7740060DEE0 /* Images.swift */; };
 		C595FA8029B7E5DB0060DEE0 /* ReviewsInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595FA7F29B7E5DB0060DEE0 /* ReviewsInputProtocol.swift */; };
-		C595FA8229B7E5E90060DEE0 /* ReviewsInputURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595FA8129B7E5E90060DEE0 /* ReviewsInputURL.swift */; };
+		C595FA8229B7E5E90060DEE0 /* ReviewsInputFetchURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595FA8129B7E5E90060DEE0 /* ReviewsInputFetchURL.swift */; };
 		C5CBC6B829B2280B00749791 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBC6B729B2280B00749791 /* SceneCoordinator.swift */; };
 		C5CBC6BA29B22BA500749791 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBC6B929B22BA500749791 /* AppCoordinator.swift */; };
 		C5CBC6BC29B2308000749791 /* FeedSceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBC6BB29B2308000749791 /* FeedSceneCoordinator.swift */; };
@@ -83,8 +83,8 @@
 		C55BE91E2993F019005F10AA /* AppleAppStoreReviewsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppleAppStoreReviewsResponse.json; sourceTree = "<group>"; };
 		C55BE91F2993F019005F10AA /* ReviewsJSONParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsJSONParserTests.swift; sourceTree = "<group>"; };
 		C55BE9202993F019005F10AA /* URLSession+Mocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Mocked.swift"; sourceTree = "<group>"; };
-		C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsURLFetcherProtocol.swift; sourceTree = "<group>"; };
-		C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsHTTPFetcher.swift; sourceTree = "<group>"; };
+		C55BE9292993F042005F10AA /* URLFetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFetcherProtocol.swift; sourceTree = "<group>"; };
+		C55BE92A2993F042005F10AA /* HTTPFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPFetcher.swift; sourceTree = "<group>"; };
 		C55BE92B2993F042005F10AA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C55BE92D2993F042005F10AA /* AppleAppStoreReviews+Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppleAppStoreReviews+Entry.swift"; sourceTree = "<group>"; };
 		C55BE92E2993F042005F10AA /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		C55BE9372993F042005F10AA /* ReviewsOutputProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsOutputProtocol.swift; sourceTree = "<group>"; };
 		C55BE9382993F042005F10AA /* FeedViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+TableView.swift"; sourceTree = "<group>"; };
 		C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsJSONParser.swift; sourceTree = "<group>"; };
-		C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsParserProtocol.swift; sourceTree = "<group>"; };
+		C55BE93B2993F042005F10AA /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
 		C55BE93C2993F042005F10AA /* FeedViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedViewController+Filter.swift"; sourceTree = "<group>"; };
 		C55BE93D2993F042005F10AA /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		C55BE93F2993F042005F10AA /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -109,14 +109,14 @@
 		C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppleAppStoreReviews+Reviews.swift"; sourceTree = "<group>"; };
 		C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsMapProtocol.swift; sourceTree = "<group>"; };
 		C55BE9462993F042005F10AA /* WordFrequencyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordFrequencyView.swift; sourceTree = "<group>"; };
-		C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsURLSourceProtocol.swift; sourceTree = "<group>"; };
-		C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsHTTPSource.swift; sourceTree = "<group>"; };
+		C55BE9482993F042005F10AA /* SourceURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceURLProtocol.swift; sourceTree = "<group>"; };
+		C55BE9492993F042005F10AA /* ReviewsSourceHTTPAppleAppStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsSourceHTTPAppleAppStore.swift; sourceTree = "<group>"; };
 		C55BE9692993F063005F10AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C55BE9732993F346005F10AA /* NoReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoReviewsView.swift; sourceTree = "<group>"; };
 		C595FA7B29B7A7660060DEE0 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		C595FA7D29B7A7740060DEE0 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C595FA7F29B7E5DB0060DEE0 /* ReviewsInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsInputProtocol.swift; sourceTree = "<group>"; };
-		C595FA8129B7E5E90060DEE0 /* ReviewsInputURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsInputURL.swift; sourceTree = "<group>"; };
+		C595FA8129B7E5E90060DEE0 /* ReviewsInputFetchURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsInputFetchURL.swift; sourceTree = "<group>"; };
 		C5CBC6B729B2280B00749791 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		C5CBC6B929B22BA500749791 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C5CBC6BB29B2308000749791 /* FeedSceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSceneCoordinator.swift; sourceTree = "<group>"; };
@@ -143,6 +143,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C55419E029B9DDCC008F3A04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C55419E329B9DE02008F3A04 /* Parse */,
+				C55419E229B9DDF3008F3A04 /* Source */,
+				C55419E129B9DDD5008F3A04 /* Fetch */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C55419E129B9DDD5008F3A04 /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9292993F042005F10AA /* URLFetcherProtocol.swift */,
+				C55BE92A2993F042005F10AA /* HTTPFetcher.swift */,
+			);
+			path = Fetch;
+			sourceTree = "<group>";
+		};
+		C55419E229B9DDF3008F3A04 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE9482993F042005F10AA /* SourceURLProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C55419E329B9DE02008F3A04 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				C55BE93B2993F042005F10AA /* ParserProtocol.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
 		C55BE8ED2993EFDD005F10AA = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +199,7 @@
 		C55BE8F82993EFDD005F10AA /* AppReviews */ = {
 			isa = PBXGroup;
 			children = (
+				C55419E029B9DDCC008F3A04 /* Services */,
 				C58B9DEC29B75BDA00C04BCC /* Common */,
 				C5CBC6B529B2268100749791 /* Scenes */,
 				C55BE9022993EFDE005F10AA /* Assets.xcassets */,
@@ -193,9 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				C595FA7F29B7E5DB0060DEE0 /* ReviewsInputProtocol.swift */,
-				C595FA8129B7E5E90060DEE0 /* ReviewsInputURL.swift */,
-				C55BE9292993F042005F10AA /* ReviewsURLFetcherProtocol.swift */,
-				C55BE92A2993F042005F10AA /* ReviewsHTTPFetcher.swift */,
+				C595FA8129B7E5E90060DEE0 /* ReviewsInputFetchURL.swift */,
 			);
 			path = Fetch;
 			sourceTree = "<group>";
@@ -217,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				C55BE93A2993F042005F10AA /* ReviewsJSONParser.swift */,
-				C55BE93B2993F042005F10AA /* ReviewsParserProtocol.swift */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -226,8 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				C55BE9432993F042005F10AA /* ReviewMapProtocol.swift */,
-				C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */,
 				C55BE9452993F042005F10AA /* ReviewsMapProtocol.swift */,
+				C55BE9442993F042005F10AA /* AppleAppStoreReviews+Reviews.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -235,8 +268,7 @@
 		C55BE9472993F042005F10AA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C55BE9482993F042005F10AA /* ReviewsURLSourceProtocol.swift */,
-				C55BE9492993F042005F10AA /* ReviewsHTTPSource.swift */,
+				C55BE9492993F042005F10AA /* ReviewsSourceHTTPAppleAppStore.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -483,7 +515,7 @@
 				C5CBC6BA29B22BA500749791 /* AppCoordinator.swift in Sources */,
 				C55BE94E2993F042005F10AA /* AppleAppStoreReviews+Entry.swift in Sources */,
 				C55BE9552993F042005F10AA /* ReviewsActor.swift in Sources */,
-				C55BE95B2993F042005F10AA /* ReviewsParserProtocol.swift in Sources */,
+				C55BE95B2993F042005F10AA /* ParserProtocol.swift in Sources */,
 				C595FA7E29B7A7740060DEE0 /* Images.swift in Sources */,
 				C55BE95C2993F042005F10AA /* FeedViewController+Filter.swift in Sources */,
 				C55BE9512993F042005F10AA /* Reviews.swift in Sources */,
@@ -492,22 +524,22 @@
 				C5CBC6C429B2639000749791 /* DetailSceneCoordinator.swift in Sources */,
 				C55BE95A2993F042005F10AA /* ReviewsJSONParser.swift in Sources */,
 				C55BE9742993F346005F10AA /* NoReviewsView.swift in Sources */,
-				C55BE9672993F042005F10AA /* ReviewsHTTPSource.swift in Sources */,
+				C55BE9672993F042005F10AA /* ReviewsSourceHTTPAppleAppStore.swift in Sources */,
 				C55BE9522993F042005F10AA /* AppleAppStoreReviews.swift in Sources */,
 				C55BE9502993F042005F10AA /* ReviewsFilter.swift in Sources */,
 				C55BE9652993F042005F10AA /* WordFrequencyView.swift in Sources */,
-				C55BE9662993F042005F10AA /* ReviewsURLSourceProtocol.swift in Sources */,
+				C55BE9662993F042005F10AA /* SourceURLProtocol.swift in Sources */,
 				C55BE95F2993F042005F10AA /* DetailsViewController.swift in Sources */,
 				C55BE9612993F042005F10AA /* FeedViewModel.swift in Sources */,
 				C5CBC6B829B2280B00749791 /* SceneCoordinator.swift in Sources */,
 				C55BE9602993F042005F10AA /* FeedViewModelProtocol.swift in Sources */,
 				C5CBC6C129B25E4500749791 /* ReviewsSceneCoordinator.swift in Sources */,
 				C595FA8029B7E5DB0060DEE0 /* ReviewsInputProtocol.swift in Sources */,
-				C55BE94B2993F042005F10AA /* ReviewsURLFetcherProtocol.swift in Sources */,
+				C55BE94B2993F042005F10AA /* URLFetcherProtocol.swift in Sources */,
 				C55BE8FA2993EFDD005F10AA /* AppDelegate.swift in Sources */,
-				C55BE94C2993F042005F10AA /* ReviewsHTTPFetcher.swift in Sources */,
+				C55BE94C2993F042005F10AA /* HTTPFetcher.swift in Sources */,
 				C55BE9642993F042005F10AA /* ReviewsMapProtocol.swift in Sources */,
-				C595FA8229B7E5E90060DEE0 /* ReviewsInputURL.swift in Sources */,
+				C595FA8229B7E5E90060DEE0 /* ReviewsInputFetchURL.swift in Sources */,
 				C5CBC6BC29B2308000749791 /* FeedSceneCoordinator.swift in Sources */,
 				C55BE9562993F042005F10AA /* ReviewsInsights.swift in Sources */,
 				C55BE9582993F042005F10AA /* ReviewsOutputProtocol.swift in Sources */,

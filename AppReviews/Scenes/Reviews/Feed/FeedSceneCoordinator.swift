@@ -21,7 +21,7 @@ class FeedSceneCoordinator: SceneCoordinator {
 
         viewModel.showDetails = { review in
             let coordinator = DetailSceneCoordinator(review: review)
-            try? coordinator.start(presentation: presentation.continued(animated: true))
+            try coordinator.start(presentation: presentation.continued(animated: true))
         }
         
         display(viewController: feed, presentation: presentation)

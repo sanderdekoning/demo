@@ -16,5 +16,5 @@ protocol FeedViewModelProtocol {
     
     var mostWordOccurances: [String] { get }
     
-    var showDetails: (@MainActor (Review) -> Void)? { get }
+    var showDetails: (@MainActor (Review) throws -> Void)? { get }
 }

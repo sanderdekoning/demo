@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ReviewsJSONParser: ReviewsParserProtocol {
+class ReviewsJSONParser: ParserProtocol {
     private lazy var decoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AppleAppStoreReviewsHTTPSource: ReviewsURLSourceProtocol {
+struct ReviewsSourceHTTPAppleAppStore: SourceURLProtocol {
     typealias responseModel = AppleAppStoreReviews
 
     private var urlString: String
@@ -20,6 +20,7 @@ struct AppleAppStoreReviewsHTTPSource: ReviewsURLSourceProtocol {
     var url: URL {
         get throws {
             guard let url = URL(string: urlString) else {
+                // TODO: throw invalid URL string error
                 fatalError()
             }
             
@@ -27,5 +28,5 @@ struct AppleAppStoreReviewsHTTPSource: ReviewsURLSourceProtocol {
         }
     }
     
-    let parser: ReviewsParserProtocol = ReviewsJSONParser()
+    let parser: ParserProtocol = ReviewsJSONParser()
 }

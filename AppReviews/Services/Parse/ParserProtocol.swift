@@ -1,5 +1,5 @@
 //
-//  ReviewsParserProtocol.swift
+//  ParserProtocol.swift
 //  AppReviews
 //
 //  Created by Sander de Koning on 03/02/2023.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ReviewsParserProtocol {
+protocol ParserProtocol {
     func parse<D: Decodable>(data: Data, to type: D.Type) throws -> D
 }
